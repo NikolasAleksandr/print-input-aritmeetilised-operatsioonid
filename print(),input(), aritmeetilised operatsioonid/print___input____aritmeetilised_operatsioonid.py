@@ -87,5 +87,36 @@ elif laulu_number == "2":
     print("kill koll koll ja kill koll kill.")
 else:
     print("Sellist laulu ei eksisteeri.")
+    
+#5
+a=float(input("Sisestage ristkyliku esimene lähiskylg: "))
+b=float(input("Sisestage ristkyliku teine lähiskylg: "))
+
+P=2*(a+b)
+S=a*b
+print(f"Ristküliku ümbermõõt on {P}")
+print(f"Ristküliku pindala on {S}")
+
+#6
+kytuse_l = float(input("Sisestage tangitud kytuse kogus liitrites: "))
+läbitud_km = float(input("Sisestage läbitud kilomeetrite arv: "))
+
+kytusekulu_100km = (kytuse_l / läbitud_km) * 100
+print(f"Teie auto kytusekulu on keskmiselt {kytusekulu_100km} liitrit 100 km kohta.")
+
+#7
+keskmine_kiirus_kmh = 29.9
+aeg_minutites = float(input("Sisestage aeg minutites: "))
+läbitud_vahemaa = (keskmine_kiirus_kmh / 60) * aeg_minutites
+print(f"Rulluisutaja läbib {läbitud_vahemaa} km {aeg_minutites} minutiga.")
+
+#8
+aeg_min = int(input("Sisestage aeg minutites: "))
+tunnid = aeg_min // 60
+minutid = aeg_min % 60
+
+print(f"{aeg_min} minutit on {tunnid}:{minutid} tunni pikkune aeg.")
+
+
 
 
